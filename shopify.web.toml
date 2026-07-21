@@ -1,0 +1,7 @@
+name = "web"
+roles = ["frontend", "backend"]
+webhooks_path = "/webhooks"
+
+[commands]
+dev = "npm run dev"
+build = "npm run build"

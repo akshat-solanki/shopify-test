@@ -1,0 +1,1 @@
+export { fetchProductCatalog } from "./productCatalog";

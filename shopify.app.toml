@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "12e84cda127f7ff491874218886549c8"
+name = "Product Card Studio"
+application_url = "https://mirror-saver-performs-marco.trycloudflare.com"
+embedded = true
+handle = "vypari-product-showcase"
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2026-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,read_themes"
+optional_scopes = [ ]
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://mirror-saver-performs-marco.trycloudflare.com/auth/callback"
+]
+
+[app_proxy]
+url = "/proxy"
+subpath = "vypari-showcase"
+prefix = "apps"
