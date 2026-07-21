@@ -1,6 +1,32 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build:vercel",
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "/api/api"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/api/:path*"
+    },
+    {
+      "source": "/auth",
+      "destination": "/api/auth"
+    },
+    {
+      "source": "/auth/:path*",
+      "destination": "/api/auth/:path*"
+    },
+    {
+      "source": "/proxy",
+      "destination": "/api/proxy"
+    },
+    {
+      "source": "/proxy/:path*",
+      "destination": "/api/proxy/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
