@@ -2,7 +2,7 @@
 
 client_id = "12e84cda127f7ff491874218886549c8"
 name = "Product Card Studio"
-application_url = "https://mirror-saver-performs-marco.trycloudflare.com"
+application_url = "https://shopify-test-cn28fjxr6-hack2-cart.vercel.app"
 embedded = true
 handle = "vypari-product-showcase"
 
@@ -20,7 +20,7 @@ use_legacy_install_flow = true
 
 [auth]
 redirect_urls = [
-  "https://mirror-saver-performs-marco.trycloudflare.com/auth/callback"
+  "https://shopify-test-cn28fjxr6-hack2-cart.vercel.app/auth/callback"
 ]
 
 [app_proxy]
